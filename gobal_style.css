@@ -1,0 +1,26 @@
+   h1 {
+       color: #1f4258;
+       margin-left: 0;
+   }
+   
+   .navname {
+       background-color: #d7e3eb;
+   }
+   
+   nav {
+       float: left;
+   }
+   
+   .myname {
+       color: #a4a4a4;
+       float: right;
+   }
+   
+   p.hint {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       color: #d99595;
+       text-align: center;
+   }
