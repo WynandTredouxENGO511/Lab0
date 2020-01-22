@@ -7,18 +7,26 @@ h3 {
     color: $headercol;
 }
 
+%navbar {
+    background-color: #d7e3eb;
+    margin: $defualtmargin;
+    margin-bottom: $navbottom;
+}
+
 .navname {
     background-color: #d7e3eb;
 }
 
 .vertnav {
+    @extend %navbar;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
     display: none;
 }
 
 nav {
-    margin: $defualtmargin;
-    margin-bottom: $navbottom;
-    vertical-align: middle;
+    @extend %navbar;
     float: left;
 }
 
@@ -28,9 +36,7 @@ a:hover {
 }
 
 .myname {
-    margin: $defualtmargin;
-    margin-bottom: $navbottom;
-    color: #a4a4a4;
+    @extend %navbar;
     float: right;
 }
 
@@ -55,14 +61,9 @@ a:hover {
 
 @media screen and (max-width: 600px) {
     .navname {
-        float: none;
         display: none;
     }
     .vertnav {
-        background-color: #d7e3eb;
-        list-style-type: none;
-        margin: 0;
-        padding: 5px;
         display: block;
     }
 }
