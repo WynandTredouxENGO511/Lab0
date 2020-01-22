@@ -1,10 +1,11 @@
-h1,
-h2,
-h3 {
-  color: #1f4258;
+h1 {
+  color: red;
+  margin-left: 0;
 }
 
 .navname {
+  margin: 0;
+  margin-bottom: -20px;
   background-color: #d7e3eb;
 }
 
@@ -13,20 +14,15 @@ h3 {
 }
 
 nav {
-  margin: 5px;
-  margin-bottom: -20px;
+  margin: 100px;
+  margin-bottom: -10px;
   vertical-align: middle;
   float: left;
 }
 
-a:hover {
-  color: white;
-  background-color: #1f4258;
-}
-
 .myname {
-  margin: 5px;
-  margin-bottom: -20px;
+  margin: 100px;
+  margin-bottom: -10px;
   color: #a4a4a4;
   float: right;
 }
@@ -38,16 +34,6 @@ a:hover {
   width: 100%;
   color: #d99595;
   text-align: center;
-}
-
-.images {
-  margin: 5px;
-  margin-bottom: 20px;
-}
-
-.row img {
-  width: 100%;
-  height: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -64,24 +50,10 @@ a:hover {
     display: block;
   }
 }
-ul li {
-  padding-bottom: 10px;
-}
-
-tr > td {
-  padding: 5px;
+table,
+td {
+  padding: 100px;
   text-align: left;
 }
 
-div ul {
-  color: #595959;
-  list-style: none;
-  padding-left: 10px;
-}
-div table {
-  padding: 0;
-  color: #595959;
-  margin: 5px;
-}
-
-/*# sourceMappingURL=gobal_style.css.map */
+/*# sourceMappingURL=global_style.css.map */

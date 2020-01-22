@@ -1,0 +1,90 @@
+$defualtmargin: 5px;
+$headercol: #1f4258;
+$navbottom: -20px;
+h1,
+h2,
+h3 {
+    color: $headercol;
+}
+
+.navname {
+    background-color: #d7e3eb;
+}
+
+.vertnav {
+    display: none;
+}
+
+nav {
+    margin: $defualtmargin;
+    margin-bottom: $navbottom;
+    vertical-align: middle;
+    float: left;
+}
+
+a:hover {
+    color: white;
+    background-color: $headercol;
+}
+
+.myname {
+    margin: $defualtmargin;
+    margin-bottom: $navbottom;
+    color: #a4a4a4;
+    float: right;
+}
+
+#hint {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #d99595;
+    text-align: center;
+}
+
+.images {
+    margin: $defualtmargin;
+    margin-bottom: 20px;
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .navname {
+        float: none;
+        display: none;
+    }
+    .vertnav {
+        background-color: #d7e3eb;
+        list-style-type: none;
+        margin: 0;
+        padding: 5px;
+        display: block;
+    }
+}
+
+ul li {
+    padding-bottom: 10px;
+}
+
+tr>td {
+    padding: $defualtmargin;
+    text-align: left;
+}
+
+div {
+    ul {
+        color: rgb(89, 89, 89);
+        list-style: none;
+        padding-left: 10px;
+    }
+    table {
+        padding: 0;
+        color: rgb(89, 89, 89);
+        margin: $defualtmargin;
+    }
+}
