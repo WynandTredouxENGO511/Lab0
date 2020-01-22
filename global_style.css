@@ -1,29 +1,36 @@
-h1 {
-  color: red;
-  margin-left: 0;
+h1,
+h2,
+h3 {
+  color: #1f4258;
+}
+
+.myname, nav, .vertnav {
+  background-color: #d7e3eb;
+  margin: 5px;
+  margin-bottom: -20px;
 }
 
 .navname {
-  margin: 0;
-  margin-bottom: -20px;
   background-color: #d7e3eb;
 }
 
 .vertnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
   display: none;
 }
 
 nav {
-  margin: 100px;
-  margin-bottom: -10px;
-  vertical-align: middle;
   float: left;
 }
 
+a:hover {
+  color: white;
+  background-color: #1f4258;
+}
+
 .myname {
-  margin: 100px;
-  margin-bottom: -10px;
-  color: #a4a4a4;
   float: right;
 }
 
@@ -36,24 +43,43 @@ nav {
   text-align: center;
 }
 
+.images {
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.row img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 600px) {
   .navname {
-    float: none;
     display: none;
   }
 
   .vertnav {
-    background-color: #d7e3eb;
-    list-style-type: none;
-    margin: 0;
-    padding: 5px;
     display: block;
   }
 }
-table,
-td {
-  padding: 100px;
+ul li {
+  padding-bottom: 10px;
+}
+
+tr > td {
+  padding: 5px;
   text-align: left;
+}
+
+div ul {
+  color: #595959;
+  list-style: none;
+  padding-left: 10px;
+}
+div table {
+  padding: 0;
+  color: #595959;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=global_style.css.map */
